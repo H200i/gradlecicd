@@ -33,8 +33,13 @@ jobs:
           distribution: 'adopt'
           
       # Build with Gradle
-      - name: Build with Gradle
-        run: ./gradlew build --scan
+      - name: Build with Gradle  
+        run: ./gradlew build --scan --no-daemon
+        
+     #   - name: Archive test report
+     #   uses: actions/upload-artifact@v2
+     #   with:
+     #     name: Test report
+     #     path: build/reports/tests/test
     
-
          
