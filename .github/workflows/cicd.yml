@@ -40,7 +40,7 @@ jobs:
           
       # Build with Gradle
       - name: Build with Gradle
-        run: ./gradlew build --scan
+        run: ./gradlew build --scan --no-daemon
     
       # Configure AWS credentials
       - name: Configure AWS credentials
