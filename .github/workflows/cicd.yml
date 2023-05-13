@@ -36,6 +36,7 @@ jobs:
         with:
           java-version: 17
           distribution: 'adopt'
+          cache: gradle
           
       # Build with Gradle
       - name: Build with Gradle
